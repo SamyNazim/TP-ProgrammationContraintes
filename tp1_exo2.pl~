@@ -1,0 +1,32 @@
+homme(ali).
+homme(hacene).
+homme(mohamed).
+homme(said).
+homme(samir).
+
+femme(djamila).
+femme(fatma).
+femme(houria).
+femme(linda).
+
+pere(mohamed,samir).
+pere(samir,lilia).
+pere(samir,sair).
+pere(said,hacene).
+pere(said,linda).
+pere(hakim,ali).
+
+mere(famta,samir).
+mere(houria,lilia).
+mere(houria,said).
+mere(lilia,ali).
+mere(djamila,hacene).
+mere(djamila,linda).
+
+parent(X,Y):-
+    pere(X,Y).
+
+parent(X,Y):-
+    mere(X,Y).
+
+
